@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.svg">
+    <div class="nav">
+      <ul>
+        <a href="home.html">
+          <li>Главная</li>
+        </a>
+        <a href="about.html">
+          <li>О компании</li>
+        </a>
+        <a href="career.html">
+          <li>Карьера</li>
+        </a>
+        <a href="faq.html">
+          <li>FAQ</li>
+        </a>
+        <a href="call.html">
+          <li>Горячая линия</li>
+        </a>
+      </ul>
+    </div>
+  </header>
+
+
+  <h4 class="rrr">Часто задаваемые вопросы</h4>
+  <div class="question">
+    <div class="faq">
+      <img src="faq.svg">
+    </div>
+    <div class="container">
+      <div class="accordion">
+        <div class="accordion-item">
+          <a>Режим рабты работы ресторана?</a>
+          <div class="content">
+            <p>Часы работы могут варьироваться, но обычно ресторан открыт с 10.00 до 22.00, включая выходные. Для
+              уточнения всегда проверяйте расписание.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>Как справляться с высокими нагрузками?</a>
+          <div class="content">
+            <p>Сосредоточьтесь на задачах, работайте в команде и помогайте друг другу. Следите за своим временем и
+              старайтесь оставаться организованным.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a> Как справляться с недовольными гостями?</a>
+          <div class="content">
+            <p>Оставайтесь профессиональными и спокойными,выслушайте жалобу гостя и посочувствуйте ему, задайте вопросы,
+              чтобы определить проблему, предложите решение или попросите помощи у менеджера, соблюдайте политику
+              ресторана по обработке жалоб гостей.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>Какова моя задача на сегодня?</a>
+          <div class="content">
+            <p> Ваша задача заключается в обслуживании клиентов, поддержании чистоты на рабочем месте, приготовлении
+              пищи и соблюдении стандартов качества и безопасности продуктов.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>Как часто выплачивается зарплата?</a>
+          <div class="content">
+            <p>Заработная плата выплачивается два раза в месяц 15 и 30 числа.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>Со скольки лет можно работать в ресторане?</a>
+          <div class="content">
+            <p>На должности члена команды можно работать с 16-ти лет, на должности менеджера или директора - с 18-ти
+              лет.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr size="2.5" align="left" color="black" margin="0" pa>
+  <footer>
+
+
+    <div class="foot">
+      <p>Rostic’s — сеть предприятий быстрого обслуживания в России, специализирующаяся на блюдах из курицы и работающая
+        в соответствии с международными стандартами качества.</p>
+      <img src="logo 1.svg">
+      <div class="navi">
+        <a href="home.html">Главная</a>
+        <a href="about.html">О компании</a>
+        <a href="career.html">Карьера</a>
+        <a href="faq.html">FAQ</a>
+        <a href="call.html">Горячая линия</a>
+      </div>
+      <div class="contact">
+        <a href="https://vk.com/rostics_official?ysclid=m1gr03c0l0443330962">Вконтакте</a>
+        <a href="https://t.me/ROSTICSru">Телеграмм</a>
+        <a>Телефон: +78007075477</a>
+      </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+  const items = document.querySelectorAll(".accordion a");
+
+  function toggleAccordion() {
+    this.classList.toggle('active');
+    this.nextElementSibling.classList.toggle('active');
+  }
+
+  items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
